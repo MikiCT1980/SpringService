@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class TiempoController {
 
     @Autowired
-    TiempoService ts;
+    private TiempoService ts;
 
     @GetMapping("/time")
     @ResponseBody
