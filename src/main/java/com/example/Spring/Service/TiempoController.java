@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 /**
  * TiempoController
  */
-@Controller
+@Controller /* se crea el controlador */
 public class TiempoController {
 
     @Autowired
     private TiempoService ts;
 
-    @GetMapping("/time")
+    @GetMapping("/time") /* donde inicia el servicio */
     @ResponseBody
     public String tiempo() {
         return ts.getTime();

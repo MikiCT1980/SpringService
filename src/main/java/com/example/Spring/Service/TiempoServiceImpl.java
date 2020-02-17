@@ -9,9 +9,9 @@ import org.springframework.web.context.annotation.RequestScope;
 /**
  * TiempoServiceImpl
  */
-@Service
-@RequestScope
-public class TiempoServiceImpl implements TiempoService{
+@Service /* se declara el servicio */
+@RequestScope /* se inicia el service y este muere cuando devuelve lo que se le pide */
+public class TiempoServiceImpl implements TiempoService{ /* se crea la implementacion de TiempoService */
 
     private Calendar c;
     
